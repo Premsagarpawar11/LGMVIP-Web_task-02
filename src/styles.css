@@ -1,0 +1,98 @@
+.column{
+  padding: 30px 0 40px;
+  margin: 10px;
+  margin-top: 30px;
+  background-color: #2cd147;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.image{
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+.column:hover .image::before{
+  height: 100%;
+}
+
+.column .image img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+
+}
+.column:hover .image img{
+  box-shadow: 0 0 0 14px #4ac4cf;
+  transform: scale(0.7);
+}
+.details p{
+  display: block;
+  font-size: 15px;
+  color: rgb(247, 14, 169);
+  text-transform: capitalize;
+}
+.details:hover {transform: scale(1.2);}
+
+.details .read-more span
+{
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  background: rgb(230, 250, 173);
+  justify-content: center;
+  width: 50%;
+  display: flex;
+  padding : 15px;
+  border-radius: 10px;
+
+}
+
+.clearfix{
+  clear : both;
+}
+.column{
+  text-align: -webkit-center;
+
+}
+@media only screen and (min-width :320px){
+  .column{
+    width:100%;
+    float: left;
+  }
+  .container img{
+    width:100%;
+  
+  }
+
+}
+@media only screen and (min-width :480px){
+  .column{
+    width:50%;
+    float: left;
+  }
+  .container img{
+    width:50%;
+  
+  }
+
+}
+@media only screen and (min-width :720px){
+  .column{
+    width:30%;
+    float: left;
+  }
+
+}
+@media only screen and (min-width :1080px){
+  .column{
+    width:30%;
+    float: left;
+  }
+
+}
